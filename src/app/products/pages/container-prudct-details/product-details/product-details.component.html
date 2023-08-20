@@ -1,0 +1,6 @@
+<div *ngIf="product">
+   
+
+       <app-micro *ngIf="product.title ==='Micro'" [product]="product"></app-micro>
+       <app-nitro  *ngIf="product.title ==='Nitro'" [product]="product"></app-nitro>
+</div>

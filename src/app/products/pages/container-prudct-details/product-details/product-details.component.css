@@ -1,0 +1,18 @@
+:host{
+    width: 90%;
+    margin: auto;
+}
+
+@media (max-width: 800px) {
+    :host{
+        width: 98%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 760px) {
+    :host{
+        width: 98%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,16 @@
+.host{
+    margin: 30px;
+    margin-bottom: 60px;
+}
+.product-contenedor{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+@media (max-width: 600px) {
+    .product-contenedor {
+        flex-direction: column; /* Cambiar la dirección de flex a columna */
+        align-items: center; /* Centrar los elementos horizontalmente */
+    }
+  }  

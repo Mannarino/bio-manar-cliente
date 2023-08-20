@@ -1,0 +1,132 @@
+:host{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, auto);
+    gap: 10px; /* Espacio entre los elementos */
+    width: 100%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.title {
+    grid-column: 2 / 8; 
+    grid-row: 1/2; 
+  }
+
+.imagen-valde{
+    grid-column: 6/ 8; 
+    grid-row: 2/3; 
+}
+.item3{
+    margin-top: 30px;
+    padding: 20px;
+    grid-column: 2/ 6; 
+    grid-row: 2/5; 
+}
+.item4{
+    padding: 20px;
+    grid-column: 2/ 6; 
+    grid-row: 5/7; 
+}
+.item5{
+    grid-column: 6/ 8; 
+    grid-row: 3/6; 
+}
+.item6{
+    grid-column: 2/ 8; 
+    grid-row: 6/7; 
+}
+.item7{
+    padding: 20px;
+    grid-column: 2/ 8; 
+    grid-row: 7/8; 
+}
+img{
+    width: 100%;
+}
+h3{
+    color:#cf7930;
+    font-weight: bold;
+}
+.verde{
+    color: green;
+    font-weight: bold;
+}
+.naranja{
+    color:#cf7930;
+    font-weight: bold;
+}
+.description-central{
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 999px) {
+    .title {
+        grid-column: 1 / 9; 
+        grid-row: 1/2; 
+      }
+    
+    .imagen-valde{
+        grid-column: 6/ 9; 
+        grid-row: 2/3; 
+    }
+    .item3{
+        margin-top: 30px;
+        padding: 20px;
+        grid-column: 1/ 6; 
+        grid-row: 2/5; 
+    }
+    .item4{
+        padding: 20px;
+        grid-column: 1/ 6; 
+        grid-row: 5/7; 
+    }
+    .item5{
+        grid-column: 6/ 9; 
+        grid-row: 3/6; 
+    }
+    .item6{
+        grid-column: 1/ 9; 
+        grid-row: 6/7; 
+    }
+    .item7{
+        grid-column: 1/ 9; 
+        grid-row: 7/8; 
+    }
+  }
+
+  @media (max-width: 570px) {
+    .title {
+        grid-column: 1 / 9; 
+        grid-row: 1/2; 
+      }
+    
+    .imagen-valde{
+        grid-column: 1/ 9; 
+        grid-row: 9/10; 
+    }
+    .item3{
+        margin-top: 30px;
+        padding: 20px;
+        grid-column: 1/ 9; 
+        grid-row: 2/5; 
+    }
+    .item4{
+        padding: 20px;
+        grid-column: 1/ 9; 
+        grid-row: 5/7; 
+    }
+    .item5{
+        grid-column: 1/ 9; 
+        grid-row: 10/11; 
+    }
+    .item6{
+        grid-column: 1/ 9; 
+        grid-row: 6/7; 
+    }
+    .item7{
+        grid-column: 1/ 9; 
+        grid-row: 7/8; 
+    }
+  }  

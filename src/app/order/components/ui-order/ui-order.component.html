@@ -1,0 +1,38 @@
+
+<div class="ui-order-contenedor">
+    <h4>Presupuesto aproximado:</h4>
+
+   <table class="table">
+       <thead>
+         <tr>
+           
+           <th scope="col">productos</th>
+           <th scope="col">unidades</th>
+           <th scope="col">precio total</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>Micro 11</td>
+           <td>{{order.cantidadProductosMicro}}</td>
+           <td>{{order.precioOrdenMicro| currency:'USD' }}</td>
+         </tr>
+         <tr>
+           <td>Nitro 21</td>
+           <td>{{order.cantidadProductosNitro}}</td>
+           <td>{{order.precioOrdenNitro | currency:'USD'}}</td>
+         </tr>
+         <tr>
+           <td><b>TOTAL</b></td>
+           <td>{{order.cantidadTotalDeProductos}}</td>
+           <td>{{order.precioOrdenTotal| currency:'USD' }}</td>
+         </tr>
+         
+       </tbody>
+     </table>
+     <div class="form-text">
+       (Este es un presupuesto aproximado, puedes ponerte en contacto con nuestros representantes de ventas para seguir 
+       adelante, aqui te dejamos informacion de contacto)
+     </div>
+     <app-contact></app-contact>
+</div>

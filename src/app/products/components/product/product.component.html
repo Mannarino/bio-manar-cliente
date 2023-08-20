@@ -1,0 +1,23 @@
+
+<mat-card style="text-align: center;">
+    <mat-card-header>
+        <!-- <mat-card-title>{{ product.title | uppercase | slice:0:22 }}</mat-card-title> -->
+        <mat-card-title *ngIf="product.title==='Micro'"><img src="./assets/micro-11-nombre.jpg" alt=""></mat-card-title>
+        <mat-card-title *ngIf="product.title==='Nitro'"><img src="./assets/nitro-21-nombre.jpg" alt=""></mat-card-title>
+        <mat-card-subtitle>{{ product.price | currency:'USD' }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <div class="crop-image">
+        <img [src]="url + '/' + product.image" (load)="imageLoaded()"/>
+        <img *ngIf="notArrivedImage" src="./assets/nitro-foto.jpg" />
+    </div>
+
+    <mat-card-content style="padding: 16px;">
+        <p>{{ product.description | slice:0:80 }} ...</p> 
+    </mat-card-content>
+
+    <mat-card-actions>
+        <a mat-button  routerLink= '/products/{{ product._id }}'>Ver detalles</a>
+        <button mat-raised-button (click)="addCart()" color="accent">Agregar al carrito</button>
+    </mat-card-actions>
+</mat-card>

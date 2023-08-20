@@ -1,0 +1,95 @@
+:host{
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+/* Estilo para el contenedor principal del swiper */
+.swiper-container {
+    width: 100%; /* Ajusta el ancho del contenedor al 100% del contenedor padre */
+    max-width: 800px; /* Ajusta el ancho máximo del swiper */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+  
+  /* Estilo para los slides */
+  .swiper-slide {
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    background-color: #f4f4f4; /* Color de fondo de cada slide */
+  }
+  
+  /* Estilo para las imágenes dentro de los slides */
+  .swiper-slide img {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    max-height: 350px; /* Asegura que la imagen no sea más alta que su contenedor */
+    object-fit: cover; /* Escala y recorta la imagen para que quepa en el contenedor */
+  }
+  
+.column {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+  }
+
+  .row {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Didact Gothic', sans-serif;
+  }
+
+  
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.lists-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.list-ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-item {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #cf7930;
+  border-radius: 50%;
+}
+@media (max-width: 600px) {
+  .lists-container {
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección a columna */
+    align-items: center; 
+  }
+  .list {
+    width: 96%;
+    margin-bottom: 10px; 
+  }
+}  
